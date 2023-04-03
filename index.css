@@ -10,6 +10,11 @@ body {
 .first-section{
     background-image: url(images/image11.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 .first-section-header{
     display: flex;
@@ -29,8 +34,8 @@ body {
     margin-left: auto;
     font-style: italic;
     font-weight: bold;
-    padding-right: 4px;
+    padding-right: 2px;
 }
 a {
-    margin: 0 10px;
+    margin: 0 2px;
 }
