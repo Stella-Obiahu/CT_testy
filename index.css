@@ -37,7 +37,17 @@ body {
     font-weight: bold;
     padding-right: 2px;
 }
-a {
+.header-links a {
     margin: 0 2px;
     color: white;
+}
+.header-links2{
+    margin-left: auto;
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 2px;
+}
+.header-links2 a {
+    margin: 0 2px;
+    color: rgb(28, 28, 78);
 }
