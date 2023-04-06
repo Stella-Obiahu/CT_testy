@@ -19,6 +19,7 @@ body {
     padding-top: 20px;
     box-sizing: border-box; 
 }
+
 .first-section-header{
     display: flex;
     align-items: center;
@@ -76,7 +77,7 @@ body {
     font-weight: 500;  
 }
 .third-section{
-    background-image: url(images/image2.jpg);
+    background-image: url(images/image22.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -137,6 +138,17 @@ body {
     margin-left: 0px;
 
 }
+.text2{
+    background-color: #fff;
+    height: 160px;
+}
+.num2{
+    font-size: 50px;
+    color: gray;
+    height: 200px;
+    width: 70px;
+    font-weight: bold;
+}
 /* .carousel{
     position: relative;
 }
@@ -172,6 +184,17 @@ body {
 @media screen and (max-width:900px) {
     .carousel img{
         width: calc(100%/2);
+    }
+    .first-section{
+        background-image: url(images/image111.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        max-width: 100%;
+        /* padding: 20px;  */
+        padding-top: 20px;
+        box-sizing: border-box; 
     }
 }
 @media screen and (max-width:550px) {
