@@ -66,6 +66,49 @@
  carousel.addEventListener("touchend" , dragStop);
 
 
+
+ let tabItems = document.querySelectorAll('.tab-item');
+ let tabPanels = document.querySelectorAll('.tab-panel');
+ function activateTab(index) {
+    tabItems.forEach(item => item.classList.remove('active'));
+    tabPanels.forEach(panel => panel.classList.remove('active'));
+
+    tabItems[index].classList.add('active');
+    tabPanels[index].classList.add('active');
+ }
+
+ tabItems.forEach((item, index) => {
+    item.addEventListener('click', () =>{
+        activateTab(index);
+    });
+ });
+ window.addEventListener('resize', () =>{
+    if (window.innerWidth <= 768){
+        tabItems.forEach(item =>{
+            item.removeEventListener('click', activateTab);
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+                let panel = item.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        });
+    } else {
+        tabItems.forEach((item, index) =>{
+            item.removeEventListener('click', () =>{
+                activateTab(index);
+            });
+            item.addEventListener('click', () =>{
+                activateTab(index);
+            });
+            item.classList.remove('active');
+            tabPanels[index].classList
+        });
+    }
+ })
 // document.querySelectorAll(".carousel"). forEach(carousel => {
 //     const items = carousel.querySelectorAll(".carousel--item");
 //     const buttonsHtml = Array.from(items, () => {
