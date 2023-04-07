@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700;800&display=swap');  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 *{
     box-sizing: border-box;
 }
 body {
     margin: 0;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Asap', sans-serif; */
     min-height: 100vh;
 }
 .first-section{
@@ -96,8 +98,8 @@ body {
     padding: 45px;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-   
+    background-color: rgba(13, 13, 29, 0.5) !important;
+   opacity: 1;
 }
 .wrapper{
     max-width: 1200px;
@@ -187,7 +189,7 @@ body {
     color: rgb(28, 28, 78);
     font-weight: 600;
     position: relative;
-    top: 2.3em;
+    top: 3em;
     left: -1em;
     text-decoration: none;
 }
@@ -197,18 +199,21 @@ body {
     text-align: left;
     top: 1em;
 }
-/* Default styles for tabs */
 .forth-section{
     background-image: url(/images/image3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
 }
 .forth-section-background{
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    opacity: 0.7;
+    opacity: 0.3;
+    width: 40vw;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 20em;
 }
 .tab-container {
     display: flex;
@@ -234,34 +239,44 @@ body {
     color: rgb(28, 28, 78);
     padding: 6px;
 }
+.table-head{
+    color: rgb(12, 12, 46) !important;
+    font-size: 25px;
+    font-weight: 600;
+}
 .borderless-table {
     border-collapse: collapse;
     border: none;
 }
   
 .borderless-table td {
-    padding-right: 1em;
+    padding-right: 4em;
 }
-  
-/* .tab-item.active {
-    background-color: #fff;
-    border-color: #ccc;
+.tr-pad{
+    padding-top: 2em;
 }
-.tab-panel {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-    background-color: #fff;
+footer{
+    background-color: rgb(18, 18, 63) !important;
+    padding-top: 1em; 
+    color: rgb(87, 86, 85);
 }
-.tab-panel.active {
-    display: block;
-} */
-  
-  /* Styles for accordion */
-  
-
+.footer-head{
+    display: flex;
+}
+.footer-p{
+    margin-left: 40em;
+}
+.footerp{
+    display: inline-block;
+    padding: 10px;
+}
+.footerp1{
+    display: table-cell;
+    font-weight: 500;
+}
+.footerp2{
+    font-weight: 500;  
+}
 @media screen and (max-width:900px) {
     .carousel img{
         width: calc(100%/2);
@@ -276,6 +291,9 @@ body {
         /* padding: 20px;  */
         padding-top: 20px;
         box-sizing: border-box; 
+    }
+    .forth-section-background{
+        width: 60vw;
     }
 }
 @media (max-width: 768px) {
@@ -292,9 +310,15 @@ body {
       border: none;
       border-top: 1px solid #ccc;
     }
+    .borderless-table td {
+        padding-right: 4em;
+    }
 }
 @media screen and (max-width:550px) {
     .carousel img{
         width: 100%;
+    }
+    .footer-p{
+        margin-left: 10em;
     }
 }
